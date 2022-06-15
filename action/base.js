@@ -11,9 +11,6 @@ export default class base {
 
     get buffer(){
         if(!this.data){
-            if(this.messageId){
-                this.$data.message="64684311684646";
-            }
             this.data=this.getData();
         }
         return this.data.buffer;
@@ -50,7 +47,6 @@ export default class base {
 
     setMessage(){
         let message = randomString(32);
-        console.log("发送信息ID",message);
         this.promise = new Promise((resolve,reject)=>{
             callback.setFunction(message,(response)=>{
                 resolve(response);

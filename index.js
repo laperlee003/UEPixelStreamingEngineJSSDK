@@ -24,7 +24,7 @@ import progress from "./progress";
  *      result.msg.responseHandel=(response)=>{
  *          console.log("收到response消息",response);
  *      }
- *      rtc.send(new engine.action.archive.load()).then(()=>{
+ *      rtc.send(new engine.action.test.test()).then(()=>{
  *          console.log("存档加载成功")
  *      });
  * }).catch(msg=>{

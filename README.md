@@ -35,7 +35,7 @@ web端向ue4端发送UIInteraction消息的时候
 收到 UIInteraction消息的时候
 首先解析该消息的action动作
 并根据动作获取data数据执行具体交互流程
-在执行完成以后需要返回一个Response消息给web端
+在执行完成以后如果存在message字段，则需要返回一个Response消息给web端
 并将message带回 格式为JSON字符串
 ```
 {

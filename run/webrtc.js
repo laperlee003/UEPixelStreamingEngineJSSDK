@@ -35,7 +35,6 @@ export default class Webrtc{
                 return action.promise;
             }
         }
-        return this;
     }
     message(message){
         this.dataChannelMessageHandel = ((type,response)=>{
