@@ -13,7 +13,7 @@ UE Pixel Streaming Engine JSSDK
 ### 程序下载地址
 - http://xxxxx
 #### 开源地址
-- xxxxx
+- https://github.com/laperlee003/UEPixelStreamingEngineMaster
 
 
 ## Development Specification
