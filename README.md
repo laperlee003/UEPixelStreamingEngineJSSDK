@@ -11,6 +11,21 @@ UE Pixel Streaming Engine JSSDK
 #### 开源地址
 - https://github.com/laperlee003/UEPixelStreamingEngineMaster
 
+## 调用示例
+```
+import engine from "UEPixelStreamingEngine";
+engine.run("wx://127.0.0.1:8888","canvas").then(result=>{
+     let rtc=result.rtc;
+     result.msg.responseHandel=(response)=>{
+          console.log("收到response消息",response);
+     }
+     rtc.send(new engine.action.test.test()).then(()=>{
+          console.log("操作响应信息")
+     });
+}).catch(msg=>{
+     console.error(msg);
+});
+```
 
 ## Development Specification
 ## 开发规范
