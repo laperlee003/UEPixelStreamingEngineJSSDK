@@ -51,6 +51,7 @@ web端向ue4端发送UIInteraction消息的时候
 ```
 {
     action:"callback",
+    data:#返回的数据信息#,       可以是object、null、string
     message:"消息编号"
 }
 ```
