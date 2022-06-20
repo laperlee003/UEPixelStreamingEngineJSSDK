@@ -19,8 +19,8 @@ engine.run("wx://127.0.0.1:8888","canvas").then(result=>{
      result.msg.responseHandel=(response)=>{
           console.log("收到response消息",response);
      }
-     rtc.send(new engine.action.test.test()).then(()=>{
-          console.log("操作响应信息")
+     rtc.send(new engine.action.test.test()).then((data)=>{
+          console.log("测试消息发送成功，收到响应数据:",data)
      });
 }).catch(msg=>{
      console.error(msg);
