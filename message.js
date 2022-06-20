@@ -19,7 +19,7 @@ export default class Message {
                 response=JSON.parse(response);
                 //如果是回调函数侧执行预先定义的回调方法
                 if(response.action == "callback"){
-                    callback.runFunction(response.message,response);
+                    callback.runFunction(response.message,response.data);
                 }else{
                     this.responseHandel(response);
                 }
